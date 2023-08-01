@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227" height="227" viewBox="0 0 227 227">
+  <defs>
+    <filter id="椭圆_5" x="0" y="0" width="227" height="227" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="play" transform="translate(-787 -2166)">
+    <g transform="matrix(1, 0, 0, 1, 787, 2166)" filter="url(#椭圆_5)">
+      <circle id="椭圆_5-2" data-name="椭圆 5" cx="68.5" cy="68.5" r="68.5" transform="translate(35 35)" fill="#fff"/>
+    </g>
+    <path id="多边形_1" data-name="多边形 1" d="M18.5,0,37,32.667H0Z" transform="translate(914.5 2254.5) rotate(90)" fill="#3984ee"/>
+  </g>
+</svg>

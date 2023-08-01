@@ -1,0 +1,1338 @@
+/* --- Global --- */
+
+i.rect {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 0;
+}
+i.rect.rect-white {
+    background-color: #fff;
+}
+i.rect.rect-blue {
+    background-color: #3984EE;
+}
+i.rect.rect-green {
+    background-color: #A6D241;
+}
+i.rect.rect-pink {
+    background-color: #FF8697;
+}
+i.rect.rect-orange {
+    background-color: #FFC851;
+}
+
+.rounded-btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 5px 0;
+}
+
+.rounded-btn.btn-pink {
+    color: #ff8697;
+}
+
+.rounded-btn.btn-blue {
+    color: #272f6b;
+}
+
+.page-container .title p:first-child {
+    font-size: 20px;
+}
+.page-container .title .sub-title {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container-header {
+    width: 100%;
+    padding: 30px 0 80px;
+}
+
+.container-header.header-blue {
+    background-color: rgb(232, 243, 255);
+}
+
+.container-header.header-green {
+    background-color: rgb(237, 244, 228);
+}
+
+.container-header.header-pink {
+    background-color: #faefef;
+}
+
+.container-header.header-orange {
+    background-color: #f8f6e7;
+}
+
+.container-header .header-title {
+    font-family: "NotoSansKR";
+    font-weight: bold;
+    font-size: 36px;
+    position: relative;
+}
+
+.container-header .breadcrumb {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    padding: 0;
+    background-color: transparent;
+}
+.container-header .breadcrumb-item a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 12px;
+}
+.container-header .breadcrumb-item a i {
+    line-height: 20px;
+}
+.container-header .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "›";
+}
+
+.container-intro {
+    background-color: white;
+    margin-top: -40px;
+    padding: 40px;
+}
+
+.container-intro .intro-detail {
+
+}
+.container-intro .intro-detail .intro-detail-section {
+    border-bottom: 1px solid #CDCDCD;
+}
+.container-intro .intro-detail .section-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3984EE;
+}
+.container-intro .intro-detail .section-detail {
+    font-size: 14px;
+    font-weight: 300;
+}
+.container-intro .intro-detail .section-detail span:first-child {
+    color: #272F6B;
+    font-weight: bold;
+}
+
+/*--- 메인 ----*/
+
+.panel-fields {
+    position: relative;
+}
+
+.panel-fields:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% - 20px);
+    height: 100%;
+    top: 20px;
+    left: 20px;
+}
+
+.panel-fields.yellow-shadow:before {
+    background: #ffc851;
+}
+
+.panel-fields.pink-shadow:before {
+    background: #ff8697;
+}
+
+.panel-fields.green-shadow:before {
+    background: #b1e046;
+}
+
+.panel-fields.blue-shadow:before {
+    background: #5ec1f5;
+}
+
+.main > div:first-child {
+    margin-bottom: 130px;
+}
+
+.main.page-container:before {
+    content: '';
+    display: block;
+    height: 72px;
+    width: 100%;
+    background: #e8f3ff;
+    margin-bottom: 25px;
+}
+
+.blue-sub-logo {
+    display: table;
+    background-color: #3984ee;
+    margin-top: -60px;
+    margin-bottom: 80px;
+}
+
+.blue-sub-logo > div {
+    width: 220px;
+    height: 200px;
+    background: url(../img/main/sub_logo.svg) no-repeat;
+    background-position: bottom -52px right -55px;
+    background-size: 115%;
+    opacity: 0.05;
+}
+
+.blue-sub-logo > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 38px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.intro-section {
+    background: url("../img/main/imagine_large.svg") no-repeat;
+    background-position: right 0;
+    background-size: contain;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.nuri-section,
+.challenge-section,
+.imagine-section,
+.gallery-section {
+    margin-top: 80px;
+}
+
+.nuri-section {
+    background: url("../img/main/atom_blur.svg") no-repeat;
+    background-position: 15%;
+}
+
+.challenge-section {
+    background: url("../img/main/goal_blur.svg") no-repeat;
+    background-position: 82%;
+}
+
+.imagine-section {
+    background: url("../img/main/telescope.svg") no-repeat;
+    background-position: 18%;
+}
+
+.gallery-section {
+    background: url("../img/main/camera_blur.svg") no-repeat;
+    background-position: 79%;
+}
+
+.intro-section .top-title-fields {
+    padding-left: 70px;
+}
+
+.intro-section .top-title-fields h2 > span:first-child {
+    color: #3984ee;
+    font-size: 38px;
+}
+
+.intro-section .top-title-fields h2 > span:last-child {
+    color: #272f6b;
+    font-size: 44px;
+}
+
+.intro-section .top-title-fields > p:nth-child(2) {
+    color: #222;
+    font-size: 30px;
+}
+
+.intro-section .top-title-fields > p:nth-child(3) {
+    font-weight: 500;
+    color: #666;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+.intro-section .top-title-fields > a {
+    color: #333;
+}
+
+.desc-fields > p:first-child {
+    color: #222;
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+
+.nuri-section .desc-fields > p:first-child {
+    border-bottom: 1px solid #ffc851;
+}
+
+.challenge-section .desc-fields > p:first-child {
+    border-bottom: 1px solid #ff8697;
+}
+
+.imagine-section .desc-fields > p:first-child {
+    border-bottom: 1px solid #a6d241;
+}
+
+.gallery-section .desc-fields > p:first-child {
+    border-bottom: 1px solid #57b4e6;
+}
+
+.desc-fields > p:first-child span {
+    position: relative;
+}
+
+.desc-fields > p:nth-child(2) {
+    font-weight: 500;
+    color: #222;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.desc-fields > p:last-child {
+    font-weight: 500;
+    color: #666;
+}
+
+.round-panel {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    border-radius: 10px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.round-panel.share-success {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.science-research {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.science-feel {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.study-part {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.live-show {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.science-class {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.online-learning {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.abroad-content {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.lansen-show {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel.acheive {
+    background: url("../img/main/share_success.png") center no-repeat;
+    /*background-size: cover;*/
+}
+
+.round-panel .hover-overlay {
+    display: none;
+}
+
+
+.round-panel:hover .hover-overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.round-panel:hover .hover-overlay p {
+    color: #ffc851;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.round-panel:hover .hover-overlay a {
+    border: 1px solid;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.round-panel:hover .hover-overlay a:hover {
+    color: #fff;
+}
+
+.round-panel .panel-detail {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    color: #fff;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+}
+
+.round-panel:hover .panel-detail {
+    display: none;
+}
+
+.round-panel .panel-detail > p:first-child {
+    padding-bottom: 5px;
+}
+
+.round-panel .panel-detail > p:last-child {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/*--- 운영프로그램 ---*/
+
+.container-operation .title,
+.container-request .title {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.container-operation {
+    background-color: #F4F4F4;
+    padding: 50px;
+}
+.container-operation .circle-content .circle-item {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: -10px;
+    padding: 44px 0;
+}
+.circle-item.orange {
+    background-color: rgba(255, 200, 81, 0.147);
+}
+.circle-item.pink {
+    background-color: rgba(255, 134, 151, 0.147);
+}
+.circle-item.green {
+    background-color: rgba(166, 210, 65, 0.147);
+}
+.circle-item.blue {
+    background-color: rgba(94, 193, 245, 0.147);
+}
+.circle-item .item-title {
+    font-size: 16px;
+}
+.circle-item .item-sub-title {
+    font-size: 12px;
+    font-weight: 300;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.container-request {
+    padding: 50px;
+}
+.container-request .row {
+    max-width: 545px;
+    margin: 0 auto;
+}
+.container-request .media .media-image {
+    width: 60px;
+    height: 60px;
+}
+.container-request .media .media-image.pink {
+    border: 1px solid rgba(255, 134, 151, 0.7);
+}
+.container-request .media .media-image.green {
+    border: 1px solid rgba(166, 210, 65, 0.7);
+}
+.container-request .media .media-body .media-title {
+    font-size: 16px;
+}
+.container-request .media .media-body .media-sub-title {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+@media (max-width: 576px) {
+    .container-request .media {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
+/*--- 준비중 ---*/
+.container-maintenance {
+    background-color: white;
+    margin-top: -40px;
+}
+.container-maintenance .media {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.container-maintenance .media .media-body p {
+    letter-spacing: -0.04em;
+}
+.container-maintenance .media .media-body .maintenance-title {
+    color: #272F6B;
+    font-size: 23px;
+}
+.container-maintenance .media .media-body .maintenance-sub-title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*--- 싸이언쓰 클래스 ----*/
+
+.container-science-class {
+    background-color: white;
+    margin-top: -44px;
+}
+
+.container-science-class h2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 28px;
+    color: #111;
+    padding-bottom: 7px;
+}
+
+.container-science-class h2:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #111;
+    left: calc(50% - 10px);
+    bottom: 0;
+}
+
+.container-science-class h2 + p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+}
+
+.container-science-class .round-box {
+    padding: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 25px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.container-science-class .nav-pills .nav-item {
+    margin-left: -1px;
+}
+.container-science-class .nav-pills .nav-link.active,
+.container-science-class .nav-pills .show > .nav-link {
+    background-color: #A6D241;
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: 3px 4px 10px #cdcdcd;
+}
+
+.container-science-class .nav-pills .nav-link.nav-red.active {
+    background-color: #ff8697;
+}
+
+.container-science-class .nav-pills .nav-link.nav-yellow.active {
+    background-color: #ffc851;
+}
+
+.container-science-class .nav-pills .nav-link {
+    font-size: 14px;
+    color: #999999;
+    padding: 12px;
+}
+.container-science-class .nav-pills .nav-link:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #cdcdcd;
+    right: 0;
+    top: 14px;
+}
+.container-science-class .nav-pills .nav-item:last-child .nav-link:after,
+.container-science-class .nav-pills .nav-item .nav-link.active:after {
+    display: none;
+}
+.container-science-class .science-class-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 28px;
+    color: #111;
+    padding-bottom: 7px;
+}
+.container-science-class .science-class-title:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #111;
+    left: calc(50% - 10px);
+    bottom: 0;
+}
+.container-science-class .science-class-title ~ p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+}
+
+.container-science-class .science-list {
+    border-top: 4px solid rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+.container-science-class .science-list .media {
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+.container-science-class .science-list .media:last-child {
+    border-bottom: transparent;
+}
+.container-science-class .science-list .media .media-img {
+    width: 200px;
+}
+.container-science-class .science-list .media-body .science-item-title {
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    letter-spacing: -0.04em;
+}
+.container-science-class .science-list .media-body .science-item-detail {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+.container-science-class .science-list .media-body .science-item-detail .right-border:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #cdcdcd;
+    right: 0;
+    top: 4px;
+}
+.container-science-class .science-list .media-body .science-item-sub-title {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    font-weight: 200;
+    letter-spacing: -0.04em;
+}
+
+.noti {
+    background: #ff8697;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.noti.noti--yellow {
+    background: #ffc851;
+    color: #333;
+    padding: 6px 22px;
+}
+
+.dot-box {
+    padding: 25px 15px;
+    margin: 30px 0;
+    border: 1px dashed #999;
+}
+
+.dot-box .title {
+    font-size: 28px;
+    font-weight: 500;
+    display: table;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    line-height: 46px;
+    margin-bottom: 35px;
+}
+
+.dot-box .sub-title {
+    color: #ff8697;
+    margin-bottom: 15px;
+}
+
+.dot-box .sub-title.sub-title--yellow {
+    color: #ffc851;
+}
+
+.dot-box .sub-title + p {
+    font-weight: normal;
+    color: #555;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.live-quiz-show .dot-box .link-btn {
+    padding: 15px 0;
+}
+
+.live-quiz-show .dot-box .link-btn a {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 5px 18px;
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 14px;
+    margin-right: 10px;
+}
+
+.live-quiz-show .switch-default {
+    width: 170px;
+    height: 40px;
+}
+
+.live-quiz-show .switch-default.switch-on {
+    /*box-shadow: none !important;*/
+    /*background-color: #ffffff!important;*/
+    /*border: 1px solid rgb(223, 223, 223) !important;*/
+    box-shadow: #36648b 0px 0px 0px 22.2222px inset !important;
+    background-color: #36648b!important;
+    border: 1px solid #36648b !important;
+    /*box-shadow: #3984ee 0px 0px 0px 22.2222px inset !important;*/
+    /*background-color: #3984ee!important;*/
+    /*border: 1px solid #3984ee !important;*/
+}
+
+.live-quiz-show .switch-default small {
+    width: 120px;
+    height: 40px;
+}
+
+.live-quiz-show .switch small {
+    border-radius: 35px;
+    line-height: 42px;
+    color: #3984ee;
+    border: 1px solid;
+}
+
+.science-accordion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.science-accordion .title {
+    color: #272f6b;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.science-accordion .card {
+    border: none;
+    border-radius: 0;
+}
+
+.science-accordion .card-header {
+    border-radius: 0;
+    background: transparent;
+    padding: 15px 35px;
+}
+
+.science-accordion .card-body {
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.science-accordion .card-header .card-link {
+    color: #555;
+}
+
+#science-contents .product-rel-noti {
+    padding-bottom: 50px;
+}
+
+#science-contents .product-rel-noti .title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#science-contents .product-rel-noti .title + p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    line-height: 20px;
+}
+
+/* --- 과학체험프로그램 신청하기 --- */
+
+.request-science .title {
+    font-size: 18px;
+    color: #272f6b;
+    padding-bottom: 15px;
+}
+
+.request-science .sub-title {
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+.request-science .form-control {
+    border-radius: 0;
+}
+
+.request-science .challenge-field .option-field {
+    padding: 0 5px;
+}
+
+.request-science .option-field .form-check-label {
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.request-science .request-input-field {
+    padding: 25px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.request-science .challenge-field {
+    border-top: 3px solid #333;
+}
+
+.request-science .imagine-field p:nth-child(3) span:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request-science .imagine-field p:nth-child(3) span:last-child {
+    font-weight: 500;
+    font-size: 12px;
+    color: #60a6ef;
+    padding-left: 10px;
+}
+
+.request-science .requester-field .control-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.request-science .requester-field .required {
+    color: #d60000;
+}
+
+.request-science .requester-field input.form-control {
+    height: auto;
+    padding: 3px 10px;
+}
+
+.request-science .requester-field .find-address {
+    width: auto;
+    background: #999;
+    color: #fff;
+    font-size: 12px;
+}
+
+.request-science .personal-info textarea {
+    font-weight: normal;
+    font-size: 12px;
+    color: #333;
+    padding: 20px;
+}
+
+.request-science .personal-info .form-check-label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.option-field .form-check-label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin-top: -8px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+
+.option-field input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    margin: -6px 0 0 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.option-field input[type="radio"]:checked + .form-check-label:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    left: 6px;
+    margin-top: -2px;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1;
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 1px #444;
+    box-shadow: 0px 0px 1px #444;
+}
+
+.check-field .form-check-label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 112px;
+    margin-top: -7px;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid #bbb;
+    background: #333;
+}
+
+.check-field input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 110px;
+    margin: -6px 0 0 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.check-field input[type="checkbox"]:checked + .form-check-label:after {
+    position: absolute;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    content: '\F00C';
+    top: 50%;
+    right: 116px;
+    margin-top: -2px;
+    font-size: 11px;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+
+/* --- YSC 성과공유회 --- */
+
+.success-share .dot-box {
+    padding-bottom: 0;
+}
+
+.success-share .dot-box img {
+    margin-bottom: -5px;
+}
+
+.success-share .vote-wrap {
+    padding: 20px 0;
+
+    border-top: 3px solid #333;
+    border-bottom: 1px solid;
+}
+
+.success-share .vote-fields {
+    margin: 0 -10px;
+}
+
+.success-share .vote-item {
+    display: inline-block;
+    width: calc(20% - 23px);
+    margin: 0 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.success-share .vote-item .img-back {
+    position: relative;
+    background: url("../img/success_share/vote_img.png") no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.success-share .vote-item .img-back:before {
+    content: '';
+    float: left;
+    padding-top: 130%;
+}
+
+.success-share .vote-item .img-back a {
+    display: none;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 16px;
+    line-height: 16px;
+    z-index: 9;
+}
+
+.success-share .vote-item .img-back a:hover {
+    color: #fff;
+}
+
+.success-share .vote-item .img-back:hover a {
+    display: block;
+}
+
+.success-share .vote-item .img-back:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.success-share .vote-item .img-back + p {
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.success-share .vote-item > a {
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+/* ----- Gallery Page ----- */
+.gallery-list {
+    border-top: 4px solid rgb(51, 51, 51);
+    /*border-bottom: 1px solid rgb(51, 51, 51);*/
+}
+
+.container-science-class .nav-pills .nav-link.nav-blue.active {
+    background-color: rgb(94, 193, 245);
+    box-shadow: 3px 4px 10px #cdcdcd;
+}
+
+.gallery-list .preview {
+    background: url("../img/galary_achieve/gallery.png") center no-repeat;
+    background-size: cover;
+    height: 180px;
+}
+
+.gallery-list .preview:hover .overlay {
+    width: 100%;
+    height: 100%;
+    background: RGBA(0, 0, 0, 0.55);
+}
+
+.gallery-list .preview:hover .overlay .overlay-text {
+    cursor: pointer;
+    padding: 16px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.gallery-detail {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.gallery-view-detail {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.container-science-class .gallery-list .gallery-detail .right-border:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #cdcdcd;
+    right: 0;
+    top: 4px;
+}
+
+#gallery_year:focus,
+#gallery_search:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+#gallery_search ~ i {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 1rem;
+}
+
+.gallery-view-title {
+    font-size: 22px;
+}
+
+.gallery-view-content p {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(205, 205, 205);
+    letter-spacing: 0.001rem;
+    line-height: 20px;
+}
+
+.gallery-view-attach {
+    color: rgb(51, 51, 51);
+}
+
+.gallery-view-attach .attach-text {
+    color: rgb(153, 153, 153);
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.gallery-view-more .btn {
+    padding: 3px 15px;
+}
+
+.gallery-past-next p:first-child {
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.gallery-past-next {
+    font-size: 14px;
+    border-top: 1px solid rgb(205, 205, 205);
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.container-science-class .pagination {
+    position: relative;
+    padding: 30px 0;
+    margin-top: 25px;
+}
+
+.container-science-class .pagination:before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #333;
+    top: 0;
+}
+
+.container-science-class .pagination .page-link {
+    font-size: 14px;
+    height: 34px;
+    line-height: 13px;
+    color: #6c757d;
+    border-color: transparent;
+}
+
+.container-science-class .pagination .page-link:hover {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.container-science-class .pagination .page-link:focus {
+    border-color: #333 !important;
+    box-shadow: none;
+}
+
+.container-science-class .pagination .page-item:nth-child(1) .page-link,
+.container-science-class .pagination .page-item:nth-child(9) .page-link {
+    margin: 0 5px;
+    border: 1px solid #dee2e6;
+}
+
+.container-science-class .pagination .page-item:nth-child(2) .page-link {
+    margin-right: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.container-science-class .pagination .page-item:nth-child(8) .page-link {
+    margin-left: 15px;
+    border: 1px solid #dee2e6;
+}
+
+/*--- Media Queries ---*/
+
+@media screen and (min-width: 1400px) {
+
+    .panel-fields.pink-shadow {
+        margin-left: -135px;
+    }
+
+    .panel-fields.green-shadow {
+        margin-right: -135px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro-section,
+    .nuri-section,
+    .challenge-section,
+    .imagine-section,
+    .gallery-section {
+        background: none;
+    }
+
+    .gallery-section,
+    .challenge-section {
+        text-align: right;
+    }
+
+    .blue-sub-logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+    }
+
+    .main .desc-fields {
+        margin-bottom: 35px;
+    }
+
+    .main .panel-fields,
+    .main .panel-fields .round-panel {
+
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .container-header {
+        padding-bottom: 100px;
+    }
+
+    .container-header .breadcrumb {
+        top: 65px;
+    }
+
+    .container-science-class {
+        margin-top: -41px;
+    }
+
+    .container-science-class .nav-pills .nav-link {
+        font-size: 12px;
+    }
+
+    .container-maintenance .media {
+        padding: 50px 0;
+    }
+
+    .dot-box .title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .science-accordion .card-header {
+        padding: 15px 20px;
+    }
+
+    /*--- Main ---*/
+
+    .blue-sub-logo > div {
+        width: 170px;
+        height: 150px;
+    }
+
+    .intro-section .top-title-fields {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .intro-section .top-title-fields h2 > span:first-child {
+        font-size: 22px;
+    }
+
+    .intro-section .top-title-fields h2 > span:last-child {
+        font-size: 24px;
+    }
+
+    .intro-section .top-title-fields > p:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .intro-section .top-title-fields > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .intro-section .top-title-fields > a {
+        font-size: 14px;
+    }
+
+    .nuri-section, .challenge-section, .imagine-section, .gallery-section {
+        text-align: center;
+    }
+
+    .main .panel-fields {
+        margin: 0 auto;
+    }
+
+    .main .panel-fields .round-panel {
+        display: table;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .main .panel-fields:before {
+        width: 100%;
+    }
+
+    .success-share .dot-box {
+        padding-bottom: 25px;
+    }
+
+    /*--- Request Science ---*/
+
+    .request-science .sub-title {
+        padding-right: 0;
+    }
+
+    .request-science .challenge-field .option-field {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    /*--- Success Share ---*/
+
+    /*.success-share .vote-fields {*/
+        /*margin: 0;*/
+    /*}*/
+
+    .success-share .vote-item {
+        width: calc(50% - 19px);
+        margin: 0 8px 20px;
+        text-align: center;
+    }
+}
